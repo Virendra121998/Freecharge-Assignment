@@ -15,3 +15,14 @@ PostMan has been used to provide post, get and delete request. Multer has been u
 files are stored through the form-data in postman where the username and file is provided.
 
 The routes for login, signup ,uploading files and deleting files have been set up in the index.js file.
+
+
+MVC architecture of the application-
+ MVC stands for model, view and controller. Model is the database part where we define the structure of schema for database. View is where the user interacts with the application to send data and perform any operation.
+ Controller interacts with both the model and the view. It takes input from the view and then updates the database after performing the required operations.
+ In this applications we have models for the database, and routes that act as controller. View is not included since User Interface was not required.
+
+.env file-
+All the environment variables have been stored in an .env file which has been added to the .gitignore file
+
+Passwords have been hashed using bcryptjs. A salt is provided to create hash of the password
