@@ -8,7 +8,7 @@ var uploadFile=new Schema({
     encoding:{type:String},
     mimetype:{type:String},
     buffer:{},
-    sizq:{}
+    size:{}
 });
 
 var FileUpload=mongoose.model('FileUpload',uploadFile);
